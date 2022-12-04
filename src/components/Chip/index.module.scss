@@ -1,0 +1,38 @@
+.chip {
+	position: relative;
+	padding: 15px 20px;
+	color: #000;
+	font-size: 18px;
+	border-radius: 25px;
+	border: 1px solid #a0627b;
+
+	.text {
+		color: #a79ca0;
+
+		&::before {
+			content: "###";
+			margin-right: 10px;
+		}
+
+		&::after {
+			content: "";
+		}
+	}
+
+	.closebtn {
+		position: absolute;
+		top: -5px;
+		right: 0;
+		width: 20px;
+		height: 20px;
+		text-align: center;
+		background: #fff;
+		border-radius: 50%;
+		color: #a79ca0;
+		cursor: pointer;
+
+		&:hover {
+			color: #000;
+		}
+	}
+}

@@ -1,0 +1,77 @@
+.wrapper {
+	width: 500px;
+	margin: 0 auto;
+	padding: 30px 40px;
+	background: #f9f9f9;
+	box-shadow: 7px 7px 20px 10px rgba(46, 103, 140, 0.2), 0px 6px 60px rgba(0, 0, 0, 0.12);
+	border-radius: 20px;
+
+	.title {
+		color: #a79ca0;
+		margin-bottom: 30px;
+	}
+
+	.buttons {
+		width: 80%;
+		margin: 0 auto 30px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10px;
+
+		button {
+			color: #b79ba6;
+			font-size: 12px;
+		}
+
+		.colorRed {
+			background: #fae2eb;
+		}
+		.colorWhite {
+			background: #fff;
+		}
+		.size {
+			width: 150px;
+			height: 30px;
+		}
+
+		.shadow {
+			box-shadow: 2px 1px 4px rgba(99, 93, 96, 0.3);
+		}
+
+		.icon {
+			&::before {
+				content: "###";
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.backOrNext {
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		button {
+			background: #fff;
+		}
+
+		.colorBack {
+			color: #a79ca0;
+		}
+		.colorNext {
+			color: #b79ba6;
+		}
+		.size {
+			width: 120px;
+			height: 30px;
+		}
+
+		.shadow {
+			box-shadow: 1px 1px 1px rgba(99, 93, 96, 0.3);
+		}
+	}
+}

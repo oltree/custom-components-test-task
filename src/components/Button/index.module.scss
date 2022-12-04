@@ -1,0 +1,42 @@
+.button {
+	font-weight: 500;
+	border-radius: 4px;
+	transition: 0.5s all;
+
+	&:active {
+		background: #a0627b;
+		box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+
+	&:disabled {
+		color: #b4557b;
+		background: #f5f2f2;
+	}
+}
+
+.colors {
+	color: #ffffff;
+	background: #a0627b;
+
+	&:hover {
+		background: #b86888;
+	}
+}
+
+.size {
+	width: 100%;
+	height: 50px;
+}
+
+.icon {
+	&::before {
+		content: "";
+	}
+	&::after {
+		content: "";
+	}
+}
+
+.shadow {
+	box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.3);
+}

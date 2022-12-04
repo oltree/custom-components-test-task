@@ -1,0 +1,51 @@
+.wrapper {
+	position: relative;
+	padding: 20px 0 0;
+	width: 100%;
+}
+
+.field {
+	width: 100%;
+	color: #a79ca0;
+	font-weight: 300;
+	font-size: 1.3rem;
+	border-bottom: 2px solid #b79ba6;
+	transition: border-color 0.2s;
+
+	&::placeholder {
+		color: transparent;
+	}
+
+	&:placeholder-shown ~ .label {
+		font-size: 1.3rem;
+		cursor: text;
+		top: 20px;
+	}
+}
+
+.label {
+	position: absolute;
+	top: 0;
+	display: block;
+	transition: 0.2s;
+	font-size: 1rem;
+	color: #b79ba6;
+}
+
+.field:focus {
+	~ .label {
+		position: absolute;
+		top: 0;
+		display: block;
+		transition: 0.2s;
+		font-size: 1rem;
+	}
+	color: #a79ca0;
+	font-weight: 300;
+}
+
+.error {
+	padding: 3px 0;
+	color: rgb(255, 88, 88);
+	font-size: 12px;
+}
