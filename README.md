@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Getting Started with custom components Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This test task was that it was necessary to create universal components.
 
 ## Available Scripts
 
