@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useFormik } from "formik";
 
 import SignUpLayout from "../components/SignUpLayout";
@@ -5,6 +6,8 @@ import SignUpLayout from "../components/SignUpLayout";
 import { SignUpSchema } from "../validation";
 
 const SignUpContainer = () => {
+  const [modalActive, setModalActive] = useState(false);
+
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -16,10 +19,14 @@ const SignUpContainer = () => {
 
     validationSchema: SignUpSchema,
 
-    onSubmit: (values, { resetForm }) => {
-      alert(JSON.stringify(values, null, 2));
+    onSubmit: (_, { resetForm }) => {
+      setModalActive(true);
 
-      resetForm();
+      setTimeout(() => {
+        setModalActive(false);
+
+        resetForm();
+      }, 5000);
     },
   });
 
@@ -31,6 +38,8 @@ const SignUpContainer = () => {
       onSubmit={formik.handleSubmit}
       onBlur={formik.handleBlur}
       touched={formik.touched}
+      modalActive={modalActive}
+      setModalActive={setModalActive}
     />
   );
 };

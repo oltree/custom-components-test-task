@@ -6,6 +6,7 @@ import "./static/styles/normalize.scss";
 import "./static/styles/styles.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <StrictMode>
     <MainLayout />
